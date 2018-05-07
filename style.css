@@ -1,48 +1,82 @@
 .txtCenter { text-align:center; }
-.clearfix { content:""; display:block; clear: both;}
+.txtWhite { color:#fff; }
+.txtGrey { color:#777; }
+.txtBold { font-weight: bold; }
+
 
 html { background-color:#000; }
-body { width:960px; 
-margin: 10px auto; 
-padding:0; 
-border: red solid 1px;
-background-color: #777;
-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-color: #777;
-font-size: 18px;}
+body { 
+  width:960px; 
+  margin: 50px auto; 
+  padding:30px 0px; 
+  background-color: #777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777;
+  font-size: 18px;
+}
 
-#header, #nav, #section, #aside {width:495px;}
+#header, #nav, #section_asideWrapper, #footer {width:495px; border: red solid 0px; margin: 0px auto;}
 #header {
-  padding: 20px;
+  padding: 5px 0px;
   margin-bottom: 10px;
-  background: #ebebeb;
+  background-color: #ebebeb;
 }
 
 #nav {
-  padding: 20px;
-  margin-bottom: 10px;
-  background: #ebebeb;
+  padding: 5px 0px;
+  margin-bottom: 20px;
+  background-color: #ebebeb;
+}
+
+#section_asideWrapper{ 
+  height:300px;
+  margin-bottom: 20px;
 }
 
 #section {
     float:left;
-    width:495px;
+    width:240px;
     margin:0;
-    padding:0;
+    padding: 0px;
+    background-color: #ebebeb;
+    height: 100%;
 }
 
 #aside {
-    float:left;
-    width:495px;
+    float:right;
+    width:240px;
     margin:0;
-    padding:0;
+    padding: 0px;
+    background-color: #ebebeb;
+    height: 100%;
 }
 
-/*
-p { }
-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-color: '#777'
-background: '#777'
-width: '960px'
-font-size: '18px'
-*/
+#section_article {
+    margin: 10px auto;
+    width: 90%;
+    height: 70%;
+    background-color: #777;
+    padding: 10px 0px;
+}
+
+#section_article_h1h2h3 {
+    background-color: #ebebeb;
+    margin: 5px auto;
+    width: 90%;
+    padding: 1px 0px;
+}
+
+#section_article_p {
+    background-color: #ebebeb;
+    margin: 5px auto;
+    width: 90%;
+    padding: 1px 0px;
+}
+
+#footer {
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  background-color: #ebebeb;
+}
+
+.clearfix { content:""; display:block; clear: both;}
